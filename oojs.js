@@ -7,7 +7,15 @@
 // Type your solution immediately below this line:
 
 
-
+class Group {
+  constructor(name, members, addMember) {
+    this.name = name,
+    this.members = members
+  }
+  addMember(name) {
+    this.members[name].push(name)
+  }
+}
 
 
 // #2: Create an instance of the Group class and set it to a variable called `classmates`
@@ -15,11 +23,11 @@
 // Type your solution immediately below this line:
 
 
-
+let  classmates = new Group(addmember('Tom')
 
 
 // NOTE: THE CODE BELOW IS FOR TESTING PURPOSES. DO NOT REMOVE OR ALTER.
-if(typeof Group !== 'undefined') {
+if (typeof Group !== 'undefined') {
   module.exports = {
     Group
   }
